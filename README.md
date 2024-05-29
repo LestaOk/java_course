@@ -38,3 +38,36 @@ For example, the number 123312 is not a palindrome, but its descendant 363 is:
 3 = 1 + 2; 6 = 3 + 3; 3 = 1 + 2
 
 Write a function that will return true if a number is a palindrome or if any of its descendants with a length > 1 (at least 2 digits) is a palindrome.
+
+Task6: Kaprekar's Constant
+--
+Choose any four-digit number
+n
+n, greater than 1000, in which not all digits are the same.
+
+Arrange the digits in ascending order, then in descending order.
+Subtract the smaller number from the larger one. When rearranging the digits and subtracting, leading zeros should be preserved.
+This operation is called Kaprekar's function
+K
+(
+n
+)
+K(n).
+
+By repeating this process with the resulting differences, we will reach the number 6174 in no more than seven steps, after which it will reproduce itself.
+
+This property of the number 6174 was discovered in 1949 by the Indian mathematician D. R. Kaprekar, after whom it is named.
+
+Example of K(3524):
+
+5432 – 2345 = 3087; 
+
+8730 – 0378 = 8352;
+
+8532 – 2358 = 6174;
+
+7641 – 1467 = 6174
+
+You need to write a recursive function that, for a given number, returns the number of steps required to reach 6174.
+
+For example, for the number above, the answer will be 3.
