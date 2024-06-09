@@ -47,12 +47,7 @@ n, greater than 1000, in which not all digits are the same.
 
 Arrange the digits in ascending order, then in descending order.
 Subtract the smaller number from the larger one. When rearranging the digits and subtracting, leading zeros should be preserved.
-This operation is called Kaprekar's function
-K
-(
-n
-)
-K(n).
+This operation is called Kaprekar's function K(n).
 
 By repeating this process with the resulting differences, we will reach the number 6174 in no more than seven steps, after which it will reproduce itself.
 
@@ -71,3 +66,17 @@ Example of K(3524):
 You need to write a recursive function that, for a given number, returns the number of steps required to reach 6174.
 
 For example, for the number above, the answer will be 3.
+
+Task7: Cyclic Bit Shift
+--
+Java has basic bitwise operations, but it lacks cyclic bit shift operations.
+
+Write 2 functions:
+
+int rotateLeft(int n, int shift)
+
+int rotateRight(int n, int shift)
+
+where:
+- n is a positive integer
+- shift is the size of the cyclic shift
